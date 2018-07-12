@@ -66,7 +66,15 @@
                                 <i class="icon-calendar5"></i> Calender
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item"><i class="icon-power3"></i> Logout</a>
+                            <a href="{{ route('logout') }}" class="dropdown-item"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                <i class="icon-power3"></i> Logout
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                         </div>
                     </li>
                 </ul>

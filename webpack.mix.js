@@ -27,6 +27,23 @@ mix.styles([
         processCssUrls: false
     });
 
+mix.styles([
+    'public/css/bootstrap.css',
+    'public/fonts/icomoon.css',
+    'public/fonts/flag-icon-css/css/flag-icon.min.css',
+    'public/vendors/css/extensions/pace.css',
+    'public/css/bootstrap-extended.css',
+    'public/css/app-robust.css',
+    'public/css/colors.css',
+    'public/css/core/menu/menu-types/vertical-menu.css',
+    'public/css/core/menu/menu-types/vertical-overlay-menu.css',
+    'public/css/core/colors/palette-gradient.css',
+    'public/css/pages/login-register.css',
+    'public/css/style.css',
+    ], 'public/css/all-login.css').options({
+        processCssUrls: false
+    });
+
 mix.scripts([
     'public/js/core/libraries/jquery.min.js',
     'public/vendors/js/ui/tether.min.js',
